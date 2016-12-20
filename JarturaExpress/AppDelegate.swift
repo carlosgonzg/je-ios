@@ -19,7 +19,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         application.statusBarStyle = .lightContent
         GMSServices.provideAPIKey("AIzaSyC_517l2iA17HwyDJnnJFrNr_w7o-9b0lQ")
+        if let shortcutItem = launchOptions?[UIApplicationLaunchOptionsKey.shortcutItem] as? UIApplicationShortcutItem {
+            launchedShortcutItem = shortcutItem
+        }
         return true
+    }
+    
+    func application(application: UIApplication, performActionForShortcutItem shortcutItem: UIApplicationShortcutItem, completionHandler: (Bool) -> Void) {
+        let handledShortCutItem = handleShortCutItem(shortcutItem: shortcutItem)
+        
+        completionHandler(handledShortCutItem)
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
@@ -38,6 +47,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationDidBecomeActive(_ application: UIApplication) {
         // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+         guard let shortcut = launchedShortcutItem else { return }
+        handleShortCutItem(shortcutItem: shortcut)
+        launchedShortcutItem = nil
     }
 
     func applicationWillTerminate(_ application: UIApplication) {
@@ -89,6 +101,25 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 fatalError("Unresolved error \(nserror), \(nserror.userInfo)")
             }
         }
+    }
+    
+    //for handling shorcuts
+    func handleShortCutItem(shortcutItem: UIApplicationShortcutItem) -> Bool {
+        var handled = false
+        
+        // Verify that the provided `shortcutItem`'s `type` is one handled by the application.
+        guard ShortcutIdentifier(fullType: shortcutItem.type) != nil else { return false }
+        
+        guard let shortCutType = shortcutItem.type as String? else { return false }
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        var vc = UIViewController()
+        
+        
+        // Display the selected view controller
+       // window!.rootViewController?.present presentViewController(vc, animated: true, completion: nil)
+        
+        return handled
     }
 
 }

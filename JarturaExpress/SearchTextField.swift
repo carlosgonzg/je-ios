@@ -23,12 +23,12 @@ class SearchTextField : UITextField{
         self.layer.shadowOffset = CGSize(width: 1.0, height: 1.0)
         //adding image
         let iconImageView = UIImageView(image: #imageLiteral(resourceName: "magnifying-glass"))
-        iconImageView.frame = CGRect(x: 0, y: 0, width: 30, height: 30)
+        iconImageView.frame = CGRect(x: 0, y: 0, width: 24, height: 24)
         self.leftView = iconImageView
         self.leftViewMode = .always
     }
     override func leftViewRect(forBounds bounds: CGRect) -> CGRect {
-        let leftBounds = CGRect(x: bounds.origin.x + 10, y: 10, width: 30, height: 30)
+        let leftBounds = CGRect(x: bounds.origin.x + 10, y: 10, width: 24, height: 24)
         return leftBounds ;
     }
 }

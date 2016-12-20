@@ -117,7 +117,7 @@
                 <navigationController title="navFavoritesCtrl" automaticallyAdjustsScrollViewInsets="NO" id="vyR-3o-6hx" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Favoritos" image="star" id="88I-hS-r0z" customClass="BarItemField" customModule="JarturaExpress" customModuleProvider="target"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="qqW-tV-JdC">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="qqW-tV-JdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" red="0.92006564140000002" green="0.13379839060000001" blue="0.1392814517" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

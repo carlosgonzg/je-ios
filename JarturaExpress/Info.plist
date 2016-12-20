@@ -41,5 +41,18 @@
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
 	</array>
+	<key>UIApplicationShorcutItems</key>
+	<array>
+		<dict>
+			<key>UIApplicationShortcutItemIconType</key>
+			<string>UIApplicationShorcutItemIconTypeSearch</string>
+			<key>UIApplicationShortcutItemTitle</key>
+			<string>Cerca de mí</string>
+			<key>UIApplicationShortcutItemSubtitle</key>
+			<string>Busca sitios de comer cerca de tí</string>
+			<key>UIApplicationShortcutItemType</key>
+			<string>Nearby</string>
+		</dict>
+	</array>
 </dict>
 </plist>

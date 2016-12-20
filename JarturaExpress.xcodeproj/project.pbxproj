@@ -19,6 +19,7 @@
 		C051D4371E08E4820053AF56 /* SearchTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C051D4361E08E4820053AF56 /* SearchTextField.swift */; };
 		C051D43C1E08F8C20053AF56 /* BarItemField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C051D43B1E08F8C20053AF56 /* BarItemField.swift */; };
 		C08A77D51E08A689002C72A6 /* MapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08A77D41E08A689002C72A6 /* MapController.swift */; };
+		C0BB223C1E096305007B33DD /* Shorcuts.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BB223B1E096305007B33DD /* Shorcuts.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		C051D4361E08E4820053AF56 /* SearchTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTextField.swift; sourceTree = "<group>"; };
 		C051D43B1E08F8C20053AF56 /* BarItemField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarItemField.swift; sourceTree = "<group>"; };
 		C08A77D41E08A689002C72A6 /* MapController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapController.swift; sourceTree = "<group>"; };
+		C0BB223B1E096305007B33DD /* Shorcuts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shorcuts.swift; sourceTree = "<group>"; };
 		E68C9CF999D499D07F8C64E9 /* Pods-JarturaExpressTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JarturaExpressTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-JarturaExpressTests/Pods-JarturaExpressTests.release.xcconfig"; sourceTree = "<group>"; };
 		F83E8DD78297282779C69A39 /* Pods_JarturaExpressTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JarturaExpressTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -117,6 +119,7 @@
 		C0367AD81E08992100DD547D /* JarturaExpress */ = {
 			isa = PBXGroup;
 			children = (
+				C0BB223A1E0962F4007B33DD /* Handlers */,
 				C051D43A1E08E4FB0053AF56 /* Delegates */,
 				C051D4381E08E4D90053AF56 /* Inputs */,
 				C051D4391E08E4F00053AF56 /* Controllers */,
@@ -162,6 +165,14 @@
 				C0367AD91E08992100DD547D /* AppDelegate.swift */,
 			);
 			name = Delegates;
+			sourceTree = "<group>";
+		};
+		C0BB223A1E0962F4007B33DD /* Handlers */ = {
+			isa = PBXGroup;
+			children = (
+				C0BB223B1E096305007B33DD /* Shorcuts.swift */,
+			);
+			name = Handlers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -372,6 +383,7 @@
 				C08A77D51E08A689002C72A6 /* MapController.swift in Sources */,
 				C0367ADC1E08992100DD547D /* TabBarController.swift in Sources */,
 				C051D43C1E08F8C20053AF56 /* BarItemField.swift in Sources */,
+				C0BB223C1E096305007B33DD /* Shorcuts.swift in Sources */,
 				C0367ADA1E08992100DD547D /* AppDelegate.swift in Sources */,
 				C0367AE21E08992100DD547D /* JarturaExpress.xcdatamodeld in Sources */,
 			);
@@ -518,6 +530,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.cgtech.JarturaExpress;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -533,6 +546,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.cgtech.JarturaExpress;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
