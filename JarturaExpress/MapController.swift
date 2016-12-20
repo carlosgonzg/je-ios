@@ -11,6 +11,7 @@ import GoogleMaps
 import CoreLocation
 
 class MapController : UIViewController, UITextFieldDelegate, CLLocationManagerDelegate, GMSMapViewDelegate {
+    var firstTime : Bool?
     //location
     let locationManager = CLLocationManager()
     //The map view
@@ -44,6 +45,7 @@ class MapController : UIViewController, UITextFieldDelegate, CLLocationManagerDe
             self.locationManager.delegate = self
             self.locationManager.startUpdatingLocation()
         }
+        firstTime = true
     }
     
     override func didReceiveMemoryWarning() {
@@ -53,9 +55,12 @@ class MapController : UIViewController, UITextFieldDelegate, CLLocationManagerDe
     //getting location
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         let userLocation:CLLocation = locations[0]
-        //setting camera
-        let camera = GMSCameraPosition.camera(withLatitude: userLocation.coordinate.latitude, longitude: userLocation.coordinate.longitude, zoom: 15)
-        self.mapView.camera = camera
+        if firstTime!{
+            //setting camera
+            let camera = GMSCameraPosition.camera(withLatitude: userLocation.coordinate.latitude, longitude: userLocation.coordinate.longitude, zoom: 15)
+            self.mapView.camera = camera
+            firstTime = false
+        }
     }
     //when pressing enter dismiss keyboard
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
