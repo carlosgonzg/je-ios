@@ -1,0 +1,617 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6C66FB5D2F7B6A5A5390C5F3 /* Pods_JarturaExpressTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F83E8DD78297282779C69A39 /* Pods_JarturaExpressTests.framework */; };
+		BD5E28C3A7FFDE16290C444D /* Pods_JarturaExpress.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D718A06A5C93E0EA163AC5B /* Pods_JarturaExpress.framework */; };
+		C0367ADA1E08992100DD547D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0367AD91E08992100DD547D /* AppDelegate.swift */; };
+		C0367ADC1E08992100DD547D /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0367ADB1E08992100DD547D /* TabBarController.swift */; };
+		C0367ADF1E08992100DD547D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0367ADD1E08992100DD547D /* Main.storyboard */; };
+		C0367AE21E08992100DD547D /* JarturaExpress.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C0367AE01E08992100DD547D /* JarturaExpress.xcdatamodeld */; };
+		C0367AE41E08992100DD547D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0367AE31E08992100DD547D /* Assets.xcassets */; };
+		C0367AE71E08992100DD547D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0367AE51E08992100DD547D /* LaunchScreen.storyboard */; };
+		C0367AF21E08992100DD547D /* JarturaExpressTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0367AF11E08992100DD547D /* JarturaExpressTests.swift */; };
+		C051D4371E08E4820053AF56 /* SearchTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C051D4361E08E4820053AF56 /* SearchTextField.swift */; };
+		C051D43C1E08F8C20053AF56 /* BarItemField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C051D43B1E08F8C20053AF56 /* BarItemField.swift */; };
+		C08A77D51E08A689002C72A6 /* MapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08A77D41E08A689002C72A6 /* MapController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C0367AEE1E08992100DD547D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0367ACE1E08992100DD547D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C0367AD51E08992100DD547D;
+			remoteInfo = JarturaExpress;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01D0D4D3D1C50175D45E918D /* Pods-JarturaExpress.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JarturaExpress.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JarturaExpress/Pods-JarturaExpress.debug.xcconfig"; sourceTree = "<group>"; };
+		5D718A06A5C93E0EA163AC5B /* Pods_JarturaExpress.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JarturaExpress.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B85C40DB8F0818428F96D836 /* Pods-JarturaExpressTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JarturaExpressTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JarturaExpressTests/Pods-JarturaExpressTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B8C93B7081AD68872CA3C0ED /* Pods-JarturaExpress.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JarturaExpress.release.xcconfig"; path = "Pods/Target Support Files/Pods-JarturaExpress/Pods-JarturaExpress.release.xcconfig"; sourceTree = "<group>"; };
+		C0367AD61E08992100DD547D /* JarturaExpress.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JarturaExpress.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0367AD91E08992100DD547D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C0367ADB1E08992100DD547D /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		C0367ADE1E08992100DD547D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C0367AE11E08992100DD547D /* JarturaExpress.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = JarturaExpress.xcdatamodel; sourceTree = "<group>"; };
+		C0367AE31E08992100DD547D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C0367AE61E08992100DD547D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C0367AE81E08992100DD547D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0367AED1E08992100DD547D /* JarturaExpressTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JarturaExpressTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0367AF11E08992100DD547D /* JarturaExpressTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JarturaExpressTests.swift; sourceTree = "<group>"; };
+		C0367AF31E08992100DD547D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C051D4361E08E4820053AF56 /* SearchTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTextField.swift; sourceTree = "<group>"; };
+		C051D43B1E08F8C20053AF56 /* BarItemField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarItemField.swift; sourceTree = "<group>"; };
+		C08A77D41E08A689002C72A6 /* MapController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapController.swift; sourceTree = "<group>"; };
+		E68C9CF999D499D07F8C64E9 /* Pods-JarturaExpressTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JarturaExpressTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-JarturaExpressTests/Pods-JarturaExpressTests.release.xcconfig"; sourceTree = "<group>"; };
+		F83E8DD78297282779C69A39 /* Pods_JarturaExpressTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JarturaExpressTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C0367AD31E08992100DD547D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD5E28C3A7FFDE16290C444D /* Pods_JarturaExpress.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0367AEA1E08992100DD547D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C66FB5D2F7B6A5A5390C5F3 /* Pods_JarturaExpressTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		05DE7F7F9A4C7688F56CC328 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				01D0D4D3D1C50175D45E918D /* Pods-JarturaExpress.debug.xcconfig */,
+				B8C93B7081AD68872CA3C0ED /* Pods-JarturaExpress.release.xcconfig */,
+				B85C40DB8F0818428F96D836 /* Pods-JarturaExpressTests.debug.xcconfig */,
+				E68C9CF999D499D07F8C64E9 /* Pods-JarturaExpressTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5317A380FCE9B4E1D0D49B86 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5D718A06A5C93E0EA163AC5B /* Pods_JarturaExpress.framework */,
+				F83E8DD78297282779C69A39 /* Pods_JarturaExpressTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C0367ACD1E08992100DD547D = {
+			isa = PBXGroup;
+			children = (
+				C0367AD81E08992100DD547D /* JarturaExpress */,
+				C0367AF01E08992100DD547D /* JarturaExpressTests */,
+				C0367AD71E08992100DD547D /* Products */,
+				05DE7F7F9A4C7688F56CC328 /* Pods */,
+				5317A380FCE9B4E1D0D49B86 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C0367AD71E08992100DD547D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C0367AD61E08992100DD547D /* JarturaExpress.app */,
+				C0367AED1E08992100DD547D /* JarturaExpressTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C0367AD81E08992100DD547D /* JarturaExpress */ = {
+			isa = PBXGroup;
+			children = (
+				C051D43A1E08E4FB0053AF56 /* Delegates */,
+				C051D4381E08E4D90053AF56 /* Inputs */,
+				C051D4391E08E4F00053AF56 /* Controllers */,
+				C0367ADD1E08992100DD547D /* Main.storyboard */,
+				C0367AE31E08992100DD547D /* Assets.xcassets */,
+				C0367AE51E08992100DD547D /* LaunchScreen.storyboard */,
+				C0367AE81E08992100DD547D /* Info.plist */,
+				C0367AE01E08992100DD547D /* JarturaExpress.xcdatamodeld */,
+			);
+			path = JarturaExpress;
+			sourceTree = "<group>";
+		};
+		C0367AF01E08992100DD547D /* JarturaExpressTests */ = {
+			isa = PBXGroup;
+			children = (
+				C0367AF11E08992100DD547D /* JarturaExpressTests.swift */,
+				C0367AF31E08992100DD547D /* Info.plist */,
+			);
+			path = JarturaExpressTests;
+			sourceTree = "<group>";
+		};
+		C051D4381E08E4D90053AF56 /* Inputs */ = {
+			isa = PBXGroup;
+			children = (
+				C051D4361E08E4820053AF56 /* SearchTextField.swift */,
+				C051D43B1E08F8C20053AF56 /* BarItemField.swift */,
+			);
+			name = Inputs;
+			sourceTree = "<group>";
+		};
+		C051D4391E08E4F00053AF56 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C0367ADB1E08992100DD547D /* TabBarController.swift */,
+				C08A77D41E08A689002C72A6 /* MapController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		C051D43A1E08E4FB0053AF56 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				C0367AD91E08992100DD547D /* AppDelegate.swift */,
+			);
+			name = Delegates;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C0367AD51E08992100DD547D /* JarturaExpress */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C0367AF61E08992100DD547D /* Build configuration list for PBXNativeTarget "JarturaExpress" */;
+			buildPhases = (
+				213C1B49D7200EDEC0E717F5 /* [CP] Check Pods Manifest.lock */,
+				C0367AD21E08992100DD547D /* Sources */,
+				C0367AD31E08992100DD547D /* Frameworks */,
+				C0367AD41E08992100DD547D /* Resources */,
+				0E4BD5DEFF5C187F58AF10F9 /* [CP] Embed Pods Frameworks */,
+				ED9F62DEDEE0E8E8B995CA01 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JarturaExpress;
+			productName = JarturaExpress;
+			productReference = C0367AD61E08992100DD547D /* JarturaExpress.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C0367AEC1E08992100DD547D /* JarturaExpressTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C0367AF91E08992100DD547D /* Build configuration list for PBXNativeTarget "JarturaExpressTests" */;
+			buildPhases = (
+				D754DBB64FC9B9D21562FB2F /* [CP] Check Pods Manifest.lock */,
+				C0367AE91E08992100DD547D /* Sources */,
+				C0367AEA1E08992100DD547D /* Frameworks */,
+				C0367AEB1E08992100DD547D /* Resources */,
+				FECF759DE2F113073EAB8E7C /* [CP] Embed Pods Frameworks */,
+				B3556DB4AFCE3733494DAD1B /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C0367AEF1E08992100DD547D /* PBXTargetDependency */,
+			);
+			name = JarturaExpressTests;
+			productName = JarturaExpressTests;
+			productReference = C0367AED1E08992100DD547D /* JarturaExpressTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C0367ACE1E08992100DD547D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Carlos Gonzalez";
+				TargetAttributes = {
+					C0367AD51E08992100DD547D = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = W7727FCRG2;
+						ProvisioningStyle = Automatic;
+					};
+					C0367AEC1E08992100DD547D = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = W7727FCRG2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C0367AD51E08992100DD547D;
+					};
+				};
+			};
+			buildConfigurationList = C0367AD11E08992100DD547D /* Build configuration list for PBXProject "JarturaExpress" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C0367ACD1E08992100DD547D;
+			productRefGroup = C0367AD71E08992100DD547D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C0367AD51E08992100DD547D /* JarturaExpress */,
+				C0367AEC1E08992100DD547D /* JarturaExpressTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C0367AD41E08992100DD547D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0367AE71E08992100DD547D /* LaunchScreen.storyboard in Resources */,
+				C0367AE41E08992100DD547D /* Assets.xcassets in Resources */,
+				C0367ADF1E08992100DD547D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0367AEB1E08992100DD547D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0E4BD5DEFF5C187F58AF10F9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JarturaExpress/Pods-JarturaExpress-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		213C1B49D7200EDEC0E717F5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B3556DB4AFCE3733494DAD1B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JarturaExpressTests/Pods-JarturaExpressTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D754DBB64FC9B9D21562FB2F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		ED9F62DEDEE0E8E8B995CA01 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JarturaExpress/Pods-JarturaExpress-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FECF759DE2F113073EAB8E7C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JarturaExpressTests/Pods-JarturaExpressTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C0367AD21E08992100DD547D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C051D4371E08E4820053AF56 /* SearchTextField.swift in Sources */,
+				C08A77D51E08A689002C72A6 /* MapController.swift in Sources */,
+				C0367ADC1E08992100DD547D /* TabBarController.swift in Sources */,
+				C051D43C1E08F8C20053AF56 /* BarItemField.swift in Sources */,
+				C0367ADA1E08992100DD547D /* AppDelegate.swift in Sources */,
+				C0367AE21E08992100DD547D /* JarturaExpress.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0367AE91E08992100DD547D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0367AF21E08992100DD547D /* JarturaExpressTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C0367AEF1E08992100DD547D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C0367AD51E08992100DD547D /* JarturaExpress */;
+			targetProxy = C0367AEE1E08992100DD547D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C0367ADD1E08992100DD547D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C0367ADE1E08992100DD547D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C0367AE51E08992100DD547D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C0367AE61E08992100DD547D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C0367AF41E08992100DD547D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C0367AF51E08992100DD547D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C0367AF71E08992100DD547D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 01D0D4D3D1C50175D45E918D /* Pods-JarturaExpress.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = W7727FCRG2;
+				INFOPLIST_FILE = JarturaExpress/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cgtech.JarturaExpress;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		C0367AF81E08992100DD547D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8C93B7081AD68872CA3C0ED /* Pods-JarturaExpress.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = W7727FCRG2;
+				INFOPLIST_FILE = JarturaExpress/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cgtech.JarturaExpress;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		C0367AFA1E08992100DD547D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B85C40DB8F0818428F96D836 /* Pods-JarturaExpressTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = W7727FCRG2;
+				INFOPLIST_FILE = JarturaExpressTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cgtech.JarturaExpressTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JarturaExpress.app/JarturaExpress";
+			};
+			name = Debug;
+		};
+		C0367AFB1E08992100DD547D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E68C9CF999D499D07F8C64E9 /* Pods-JarturaExpressTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = W7727FCRG2;
+				INFOPLIST_FILE = JarturaExpressTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cgtech.JarturaExpressTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JarturaExpress.app/JarturaExpress";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C0367AD11E08992100DD547D /* Build configuration list for PBXProject "JarturaExpress" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0367AF41E08992100DD547D /* Debug */,
+				C0367AF51E08992100DD547D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C0367AF61E08992100DD547D /* Build configuration list for PBXNativeTarget "JarturaExpress" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0367AF71E08992100DD547D /* Debug */,
+				C0367AF81E08992100DD547D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C0367AF91E08992100DD547D /* Build configuration list for PBXNativeTarget "JarturaExpressTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0367AFA1E08992100DD547D /* Debug */,
+				C0367AFB1E08992100DD547D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C0367AE01E08992100DD547D /* JarturaExpress.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C0367AE11E08992100DD547D /* JarturaExpress.xcdatamodel */,
+			);
+			currentVersion = C0367AE11E08992100DD547D /* JarturaExpress.xcdatamodel */;
+			path = JarturaExpress.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = C0367ACE1E08992100DD547D /* Project object */;
+}

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Oq6-Vx-zhY">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--favoritesCtrl-->
+        <scene sceneID="abY-s8-Yy7">
+            <objects>
+                <viewController title="favoritesCtrl" id="zi1-bw-LpW" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="r3N-f1-OUd"/>
+                        <viewControllerLayoutGuide type="bottom" id="c1e-NQ-2l5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="otP-kv-UzV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Mis Favoritos" id="bOo-G6-ZOk"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U2y-L2-2WU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3637.5999999999999" y="458.32083958020991"/>
+        </scene>
+        <!--mapCtrl-->
+        <scene sceneID="zNf-uo-ar5">
+            <objects>
+                <viewController title="mapCtrl" id="1VY-U1-Eod" customClass="MapController" customModule="JarturaExpress" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="C9K-Ln-FjX"/>
+                        <viewControllerLayoutGuide type="bottom" id="jx7-SC-f38"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="c0f-mb-6kw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mAQ-fW-tpf" customClass="GMSMapView">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PY3-VG-A5E" userLabel="Info View">
+                                <rect key="frame" x="0.0" y="30" width="375" height="86"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Busca Lugares, Tipos de comida..." textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="Gx3-MH-ynW" customClass="SearchTextField" customModule="JarturaExpress" customModuleProvider="target">
+                                        <rect key="frame" x="16" y="16" width="343" height="50"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="Epb-9M-a0L"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="search" enablesReturnKeyAutomatically="YES"/>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Gx3-MH-ynW" secondAttribute="trailing" constant="16" id="I2H-9o-Rnn"/>
+                                    <constraint firstItem="Gx3-MH-ynW" firstAttribute="top" secondItem="PY3-VG-A5E" secondAttribute="top" constant="16" id="Mpf-XL-ZxM"/>
+                                    <constraint firstItem="Gx3-MH-ynW" firstAttribute="leading" secondItem="PY3-VG-A5E" secondAttribute="leading" constant="16" id="qxW-3b-woo"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="PY3-VG-A5E" firstAttribute="top" secondItem="C9K-Ln-FjX" secondAttribute="bottom" constant="10" id="66c-3g-Rp0"/>
+                            <constraint firstItem="PY3-VG-A5E" firstAttribute="leading" secondItem="mAQ-fW-tpf" secondAttribute="leading" id="8gk-cr-PMf"/>
+                            <constraint firstItem="PY3-VG-A5E" firstAttribute="centerY" secondItem="c0f-mb-6kw" secondAttribute="centerY" constant="-260.5" id="Ibp-md-Sxk"/>
+                            <constraint firstItem="jx7-SC-f38" firstAttribute="top" secondItem="mAQ-fW-tpf" secondAttribute="bottom" id="Jif-rE-jAJ"/>
+                            <constraint firstItem="PY3-VG-A5E" firstAttribute="trailing" secondItem="mAQ-fW-tpf" secondAttribute="trailing" id="O7K-NI-6gD"/>
+                            <constraint firstItem="mAQ-fW-tpf" firstAttribute="leading" secondItem="c0f-mb-6kw" secondAttribute="leading" id="Z7z-1o-w8n"/>
+                            <constraint firstItem="mAQ-fW-tpf" firstAttribute="top" secondItem="c0f-mb-6kw" secondAttribute="top" id="csR-AK-4PT"/>
+                            <constraint firstAttribute="trailing" secondItem="mAQ-fW-tpf" secondAttribute="trailing" id="dsg-Ru-fka"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Cerca de mí" image="nearby" id="Wxg-Jo-drT" customClass="BarItemField" customModule="JarturaExpress" customModuleProvider="target"/>
+                    <navigationItem key="navigationItem" title="Mapa" id="roy-37-dRt"/>
+                    <connections>
+                        <outlet property="mapView" destination="mAQ-fW-tpf" id="DpR-PI-tSB"/>
+                        <outlet property="tabBarItem" destination="Wxg-Jo-drT" id="lJS-EY-PrA"/>
+                        <outlet property="txtSearch" destination="Gx3-MH-ynW" id="Zbs-iJ-R8V"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xml-wR-sMq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2696.8000000000002" y="-232.53373313343329"/>
+        </scene>
+        <!--tabCtrl-->
+        <scene sceneID="ltu-hq-NVX">
+            <objects>
+                <tabBarController title="tabCtrl" id="Oq6-Vx-zhY" customClass="TabBarController" customModule="JarturaExpress" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="6Ix-6x-asM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" red="0.92006564140000002" green="0.13379839060000001" blue="0.1392814517" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="selectedImageTintColor" red="0.99607843139999996" green="0.94901960780000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                    <connections>
+                        <outlet property="tabBar" destination="6Ix-6x-asM" id="PQO-3C-C7L"/>
+                        <outlet property="tabBarFull" destination="6Ix-6x-asM" id="Srv-Ij-eX1"/>
+                        <segue destination="1VY-U1-Eod" kind="relationship" relationship="viewControllers" id="kOC-bd-ZIC"/>
+                        <segue destination="vyR-3o-6hx" kind="relationship" relationship="viewControllers" id="tVl-eb-4NO"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3in-iE-Bz8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1884" y="122"/>
+        </scene>
+        <!--navFavoritesCtrl-->
+        <scene sceneID="ipq-EN-4WH">
+            <objects>
+                <navigationController title="navFavoritesCtrl" automaticallyAdjustsScrollViewInsets="NO" id="vyR-3o-6hx" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Favoritos" image="star" id="88I-hS-r0z" customClass="BarItemField" customModule="JarturaExpress" customModuleProvider="target"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="qqW-tV-JdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.92006564140000002" green="0.13379839060000001" blue="0.1392814517" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="0.99607843139999996" green="0.94901960780000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.92006564140000002" green="0.13379839060000001" blue="0.1392814517" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                            <color key="textColor" red="0.99607843139999996" green="0.94901960780000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="zi1-bw-LpW" kind="relationship" relationship="rootViewController" id="XWj-hS-seR"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a4O-Zj-MhR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2698.4000000000001" y="458.32083958020991"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="nearby" width="25" height="25"/>
+        <image name="star" width="25" height="25"/>
+    </resources>
+</document>

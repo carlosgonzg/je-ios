@@ -1,0 +1,6 @@
+framework module Pods_JarturaExpress {
+  umbrella header "Pods-JarturaExpress-umbrella.h"
+
+  export *
+  module * { export * }
+}
