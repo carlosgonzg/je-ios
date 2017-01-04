@@ -13,8 +13,6 @@ class SearchTextField : UITextField{
         super.init(coder: aDecoder)
         self.textAlignment = .left
         self.enablesReturnKeyAutomatically = true
-        self.textAlignment = .left
-        self.enablesReturnKeyAutomatically = true
         //setting shadow
         self.layer.masksToBounds = false
         self.layer.shadowOpacity = 1.0
